@@ -1,76 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Walid Mardini | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Walid Mardini | Computer Science Graduate</title>
 
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    header {
+      margin-bottom: 60px;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      margin: 0;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--muted);
+      margin: 10px 0 20px;
+    }
+
+    .links a {
+      margin-right: 15px;
+      color: var(--accent);
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 10px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 25px;
+      border: 1px solid var(--border);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--muted);
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 15px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .tech {
+      margin-top: 15px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 15px;
+      color: var(--accent);
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 80px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
     <header>
-        <h1>Walid Mardini</h1>
-        <p class="subtitle">
-            Computer Science Graduate | IT & Software Support | Systems & Security
-        </p>
+      <h1>Walid Mardini</h1>
+      <p class="subtitle">
+        Computer Science Graduate · Backend & Systems-Focused
+      </p>
+
+      <div class="links">
+        <a href="https://www.linkedin.com/in/walid-mardini-ab35a0241" target="_blank">LinkedIn</a>
+        <a href="https://github.com/wxxmx" target="_blank">GitHub</a>
+      </div>
     </header>
 
-    <section class="about">
-        <h2>About Me</h2>
+    <!-- ABOUT -->
+    <section>
+      <h2>About Me</h2>
+      <div class="card">
         <p>
-            I am a Computer Science graduate from the University of South Florida with a strong
-            foundation in systems, software development, and problem-solving.I enjoy building 
-            practical tools that interact with real systems, and I am currently seeking an entry-level
-            role where I can learn, contribute, and grow professionally.
+          Computer Science graduate with a strong foundation in backend development,
+          system-level programming, and secure application design. I enjoy building
+          reliable software with clean architecture and practical security considerations.
         </p>
+      </div>
     </section>
 
-    <section class="projects">
-        <h2>Projects</h2>
+    <!-- PROJECTS -->
+    <section>
+      <h2>Projects</h2>
 
-        <div class="project-card">
-            <h3>System Monitor & Log Analyzer</h3>
-            <p>
-                Python-based system monitoring tool for macOS that tracks CPU,
-                memory, and disk usage, analyzes running processes, and inspects
-                system logs for errors and security-related events. Generates
-                timestamped system reports.
-            </p>
-            <a href="https://github.com/wxxmx/system-monitor" target="_blank">
-                View on GitHub
-            </a>
-        </div>
+      <!-- Project 1 -->
+      <div class="card">
+        <h3>System Monitor & Log Analyzer</h3>
+        <p>
+          Python-based system monitoring tool that collects and reports real-time
+          CPU, memory, disk usage, and running process statistics.
+        </p>
 
-    </section>
-
-    <section class="skills">
-        <h2>Skills</h2>
         <ul>
-            <li><strong>Languages:</strong> Python, C++, C</li>
-            <li><strong>Systems:</strong> Linux, macOS, Operating Systems</li>
-            <li><strong>Tools:</strong> Git, GitHub, VS Code</li>
-            <li><strong>Concepts:</strong> System Monitoring, Process Analysis, Debugging</li>
+          <li>Collected real-time system metrics using Python</li>
+          <li>Monitored running processes and resource usage</li>
+          <li>Generated readable system reports for analysis</li>
         </ul>
+
+        <p class="tech"><strong>Tech:</strong> Python, psutil, CLI</p>
+
+        <a class="project-link" href="https://github.com/wxxmx/system-monitor" target="_blank">
+          View on GitHub →
+        </a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="card">
+        <h3>User Management API</h3>
+        <p>
+          Secure backend REST API for user registration, authentication,
+          and data management with persistent storage and protected routes.
+        </p>
+
+        <ul>
+          <li>Designed RESTful API endpoints using Flask</li>
+          <li>Implemented SQLite for persistent user storage</li>
+          <li>Added password hashing for secure credential handling</li>
+          <li>Implemented JWT-based authentication and protected routes</li>
+        </ul>
+
+        <p class="tech"><strong>Tech:</strong> Python, Flask, SQLite, JWT</p>
+
+        <a class="project-link" href="https://github.com/wxxmx/user-management-api" target="_blank">
+          View on GitHub →
+        </a>
+      </div>
     </section>
 
-    <section class="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:waleedmardini64@gmail.com">waleedmardini64@gmail.com</a></p>
-        <p>LinkedIn: 
-            <a href="https://www.linkedin.com/in/walid-mardini-ab35a0241" target="_blank">
-                linkedin.com/in/walid-mardini-ab35a0241
-            </a>
+    <!-- EDUCATION -->
+    <section>
+      <h2>Education</h2>
+      <div class="card">
+        <p>
+          <strong>Bachelor of Science in Computer Science</strong><br />
+          University of South Florida, Tampa, FL<br />
+          Graduated with <strong>Cum Laude</strong> Honors
         </p>
-        <p>GitHub: 
-            <a href="https://github.com/wxxmx" target="_blank">
-                github.com/wxxmx
-            </a>
-        </p>
+      </div>
     </section>
 
     <footer>
-        <p>© 2025 Walid Mardini</p>
+      © 2025 Walid Mardini
     </footer>
 
+  </div>
 </body>
 </html>
