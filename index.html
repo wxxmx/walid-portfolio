@@ -49,7 +49,7 @@
     }
 
     .links a {
-      margin-right: 15px;
+      margin-right: 16px;
       color: var(--accent);
       font-weight: 500;
       text-decoration: none;
@@ -136,7 +136,7 @@
     <header>
       <h1>Walid Mardini</h1>
       <p class="subtitle">
-        Computer Science Graduate · Backend & Systems-Focused
+        Computer Science Graduate · Software, Systems & Security Fundamentals
       </p>
 
       <div class="links">
@@ -150,16 +150,17 @@
       <h2>About Me</h2>
       <div class="card">
         <p>
-          Computer Science graduate with a strong foundation in backend development,
-          system-level programming, and secure application design. I enjoy building
-          reliable software with clean architecture and practical security considerations.
+          Computer Science graduate with a strong foundation in software development,
+          backend systems, and security fundamentals. Experienced in building reliable
+          tools, APIs, and analysis systems that focus on correctness, performance,
+          and real-world behavior.
         </p>
       </div>
     </section>
 
     <!-- PROJECTS -->
     <section>
-      <h2>Projects</h2>
+      <h2>Selected Technical Projects</h2>
 
       <!-- Project 1 -->
       <div class="card">
@@ -172,7 +173,7 @@
         <ul>
           <li>Collected real-time system metrics using Python</li>
           <li>Monitored running processes and resource usage</li>
-          <li>Generated readable system reports for analysis</li>
+          <li>Generated readable system performance reports</li>
         </ul>
 
         <p class="tech"><strong>Tech:</strong> Python, psutil, CLI</p>
@@ -186,20 +187,46 @@
       <div class="card">
         <h3>User Management API</h3>
         <p>
-          Secure backend REST API for user registration, authentication,
-          and data management with persistent storage and protected routes.
+          Secure backend REST API for user registration, authentication, and data
+          management with persistent storage and protected routes.
         </p>
 
         <ul>
           <li>Designed RESTful API endpoints using Flask</li>
           <li>Implemented SQLite for persistent user storage</li>
           <li>Added password hashing for secure credential handling</li>
-          <li>Implemented JWT-based authentication and protected routes</li>
+          <li>Implemented JWT-based authentication and access control</li>
         </ul>
 
         <p class="tech"><strong>Tech:</strong> Python, Flask, SQLite, JWT</p>
 
         <a class="project-link" href="https://github.com/wxxmx/user-management-api" target="_blank">
+          View on GitHub →
+        </a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="card">
+        <h3>Security Log Analyzer</h3>
+        <p>
+          Python-based security tool that analyzes authentication logs to detect
+          suspicious behavior such as brute-force login attempts using time-based
+          detection rules.
+        </p>
+
+        <ul>
+          <li>Parsed raw authentication logs into structured security events</li>
+          <li>Identified successful and failed login attempts</li>
+          <li>Detected brute-force attacks using configurable thresholds</li>
+          <li>Implemented time-window based detection to reduce false positives</li>
+          <li>Generated clear, human-readable security alerts</li>
+        </ul>
+
+        <p class="tech">
+          <strong>Tech:</strong> Python, Log Analysis, Time-Series Detection
+        </p>
+
+        <a class="project-link" href="https://github.com/wxxmx/security-log-analyzer" target="_blank">
           View on GitHub →
         </a>
       </div>
